@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Times New Roman;
+	font-size: 1em;
+	line-height: 1.5em;
+	background: #f4f4f4;
+}
+
+#container{
+	background: #333333;
+	margin: 50px auto;
+	/* margin: auto; used to horizontally center an element within its container.*/
+	overflow: auto;
+	/* overflow: auto; it will create a scrollbar in case the content inside the element
+	overflows its dimensions. This allows users to scroll through the content that
+	doesn't fit within the specified area.*/
+	width: 60%;
+	min-height: 615px;
+}
+
+header h1{
+	color: #ffffff;
+	font-size: 1.9em;
+	padding: 15px 0 10px 10px;
+	border-bottom: 1px solid #ffffff;
+}
+
+#talks{
+	width: 90%;
+	background: #f4f4f4;
+	height: 400px;
+	margin: 20px auto;
+	overflow: auto;
+}
+
+.talk {
+	list-style: none;
+	padding: 8px;
+	border-bottom: 1px #cccccc dotted;
+}
+
+.talk span{
+	color: #aaa;
+}
+
+#input{
+	width: 90%;
+	min-height: 80px;
+	margin: auto;
+	padding: 0;
+	overflow: auto;
+}
+
+#input input[type='text']{
+	height:35px;
+	padding: 3px;
+	margin-bottom: 20px;
+	border: #666666 solid 1px;
+}
+#input input[name='user']{
+	width: 23%;
+}
+
+#input input[name='message']{
+	width: 74%;
+}
+
+#input .talk-btn{
+	padding: 5px;
+	margin-bottom: 20px;
+	width: 100%;
+	margin: 10px auto;
+}

@@ -10,13 +10,13 @@
 			<header>
 				<h1>Talkup! Talkbox</h1>
 			</header>
-			<div id="Takls">
+			<div id="talks">
 				<ul>
-					<li class="Talk"><span>11:11am - </span>Marziye: Hallo! Wie gehts? </li>
-					<li class="Talk"><span>11:11am - </span>Marziye: Hallo! Wie gehts? </li>
-					<li class="Talk"><span>11:11am - </span>Marziye: Hallo! Wie gehts? </li>
-					<li class="Talk"><span>11:11am - </span>Marziye: Hallo! Wie gehts? </li>
-					<li class="Talk"><span>11:11am - </span>Marziye: Hallo! Wie gehts? </li>
+					<li class="talk"><span>11:11AM - </span>Marziye: Hallo! Wie gehts? </li>
+					<li class="talk"><span>11:11AM - </span>Marziye: Hallo! Wie gehts? </li>
+					<li class="talk"><span>11:11AM - </span>Marziye: Hallo! Wie gehts? </li>
+					<li class="talk"><span>11:11AM - </span>Marziye: Hallo! Wie gehts? </li>
+					<li class="talk"><span>11:11AM - </span>Marziye: Hallo! Wie gehts? </li>
 				</ul>
 			</div>
 			<div id="input">
@@ -24,9 +24,10 @@
 				<!-- The 'action' attribute in a web form specifies the URL 
 				to which the form data is sent when the form is submitted. -->
 					<input type="text" name="user" placeholder="Enter Your Name" />
-					<input type="text" name="message" placeholder="Enter A Message" />
+					<input type="text" name="message" placeholder="Enter Your Message" />
 					<br />
-					<input class="Talk-btn" type="submit" name="submit" value="Talk up!" />
+					
+					<input class="talk-btn" type="submit" name="submit" value="Talk up!" />
 				</form>
 			</div>
 		</div>
