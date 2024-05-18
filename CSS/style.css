@@ -60,18 +60,19 @@ header h1{
 	padding: 3px;
 	margin-bottom: 20px;
 	border: #666666 solid 1px;
-}
-#input input[name='user']{
-	width: 23%;
+	width: 48%
 }
 
-#input input[name='message']{
-	width: 74%;
-}
 
 #input .talk-btn{
 	padding: 5px;
 	margin-bottom: 20px;
 	width: 100%;
 	margin: 10px auto;
+}
+
+@media only screen and (max-width: 768px){
+	#input input[type='text']{
+		width: 98%;
+	}
 }
