@@ -23,7 +23,7 @@
 				<ul>
 					<!-- that way we can put straight HTML inside of the loop -->
 					<?php while($row = mysqli_fetch_assoc($talks)) :  ?>
-						<li class="talk"><span>11:11AM - </span>Marziye: Hallo! Wie gehts? </li>
+						<li class="talk"><span><?php echo $row['time'] ?> - </span><?php echo $row['user'] ?>: <?php echo $row['message'] ?> </li>
 					<?php endwhile; ?>
 				</ul>
 			</div>
