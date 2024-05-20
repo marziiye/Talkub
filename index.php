@@ -3,7 +3,8 @@
 	//Create Select Query
 	$query = "SELECT * FROM talks";
 	//Creqate another variable to hold the results of the query
-	$talks = mysqli_query($query);
+	// Use $con to pass in your connection variable
+	$talks = mysqli_query($con, $query);
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,7 +22,7 @@
 			<div id="talks">
 				<ul>
 					<!-- that way we can put straight HTML inside of the loop -->
-					<?php while() :  ?>
+					<?php while($row = mysqli_fetch_assoc($talks)) :  ?>
 						<li class="talk"><span>11:11AM - </span>Marziye: Hallo! Wie gehts? </li>
 					<?php endwhile; ?>
 				</ul>

@@ -7,7 +7,10 @@
 	$port = 3307;
 
 	// Create connection
-	$conn = new mysqli($servername, $username, $password, $dbname, $port);
+	//MySQL provides a procedural interface. 
+	//MySQLi provides both object oriented and procedural interface. 
+	//MySQLi supports store procedure. MySQL extension does not support stored procedure.
+	$con = new mysqli($servername, $username, $password, $dbname, $port);
 
 	// Check connection
 	/* if ($conn->connect_error) {
