@@ -28,6 +28,7 @@
 				</ul>
 			</div>
 			<div id="input">
+				<!-- our form is submitting to process.php -->
 				<form method="post" action="process.php">
 				<!-- The 'action' attribute in a web form specifies the URL 
 				to which the form data is sent when the form is submitted. -->
