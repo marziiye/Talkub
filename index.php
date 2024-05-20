@@ -1,4 +1,10 @@
 <?php include 'database.php' ?>
+<?php
+	//Create Select Query
+	$query = "SELECT * FROM talks";
+	//Creqate another variable to hold the results of the query
+	$talks = mysqli_query($query);
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -14,11 +20,10 @@
 			</header>
 			<div id="talks">
 				<ul>
-					<li class="talk"><span>11:11AM - </span>Marziye: Hallo! Wie gehts? </li>
-					<li class="talk"><span>11:11AM - </span>Marziye: Hallo! Wie gehts? </li>
-					<li class="talk"><span>11:11AM - </span>Marziye: Hallo! Wie gehts? </li>
-					<li class="talk"><span>11:11AM - </span>Marziye: Hallo! Wie gehts? </li>
-					<li class="talk"><span>11:11AM - </span>Marziye: Hallo! Wie gehts? </li>
+					<!-- that way we can put straight HTML inside of the loop -->
+					<?php while() :  ?>
+						<li class="talk"><span>11:11AM - </span>Marziye: Hallo! Wie gehts? </li>
+					<?php endwhile; ?>
 				</ul>
 			</div>
 			<div id="input">
